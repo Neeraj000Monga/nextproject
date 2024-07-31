@@ -14,5 +14,14 @@ module.exports = {
       },
     },
   },
+  // fontFamily
+  theme: {
+    extend: {
+      fontFamily: {
+        cursive: ['cursive'],
+      },
+    },
+  },
   plugins: [],
 };
+
