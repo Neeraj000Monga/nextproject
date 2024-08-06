@@ -2,6 +2,9 @@ import Image from "next/image";
 import Ellipse from "../assets/Ellipse.png";
 import Magic from "../assets/MagicImage.png";
 import Character from "../assets/CharacterImg.png";
+import BrandingSlide from "@/components/BrandingSlide";
+import BandingCardSlide from "@/components/BandingCardSlide";
+import CustomButton from "@/components/custom/CustomButton";
 // import Character from "../assets/Character.png";
 
 export default function Home() {
@@ -9,7 +12,7 @@ export default function Home() {
     <main className="flex flex-col gap-16">
       <section id="section1">
         <div className="flex justify-center pt-14">
-          <h1 className="text-white font-extrabold leading-none text-[4.2rem] text-center">
+          <h1 className="text-white font-extrabold leading-none text-[4rem] text-center">
             <span className="flex" style={{ letterSpacing: "6px" }}>
               <p
                 className="text-[1.8rem] pt-12 font-cursive text-[#AB87FF]"
@@ -110,13 +113,13 @@ export default function Home() {
           <div className="relative flex flex-col h-[550px] md:h-[550px] lg:min-h-screen max-w-xl z-10">
             <div className="md:text-right flex flex-col justify-end md:justify-center items-start md:items-end w-full h-full">
               <div className="w-full flex flex-col ">
-                <div className="bg-black text-white w-full flex justify-center items-center h-1/2 p-4">
+                <div className="bg-black text-white w-full flex justify-center items-center h-1/2 p-1">
                   <h1 className="text-5xl lg:text-6xl font-bold my-0">
                     TO CURATE THE ABOVE LIST, WE&apos;VE ASSEMBLED A
                   </h1>
                 </div>
                 <div className="text-black w-full flex justify-center items-center">
-                  <h1 className="text-5xl lg:text-6xl font-bold my-0">
+                  <h1 className="text-5xl lg:text-6xl font-bold my-0 p-1">
                     TEAM OF EXCEPTIONALLY SKILLED INDIVIDUALS
                   </h1>
                 </div>
@@ -127,9 +130,9 @@ export default function Home() {
         </div>
       </section>
       <section id="section6">
-        <div>
+        <div className="w-full">
           <div className="flex justify-center pt-14">
-            <h1 className="text-white font-extrabold leading-none text-[4.2rem] text-center">
+            <h1 className="text-white font-extrabold leading-none text-[4rem] text-center">
               <span className="flex" style={{ letterSpacing: "6px" }}>
                 <p
                   className="text-[1.8rem] pt-4 h-14 font-cursive text-[#AB87FF]"
@@ -151,7 +154,35 @@ export default function Home() {
               <span>!</span>
             </h1>
           </div>
-          <div className=""></div>
+          <div>
+            <BrandingSlide />
+            {/* <BandingCardSlide /> */}
+          </div>
+        </div>
+      </section>
+      <section id="section7">
+        <div>
+          <h1
+            className="text-white font-extrabold leading-none text-[4rem] text-center"
+            style={{ lineHeight: 1.2 }}
+          >
+            <span>
+              LOCKED AND LOADED FOR <br />
+            </span>
+            <span className="text-[#AB87FF]">
+              COLLABORATION? <br />
+            </span>
+            <span>
+              LET&apos;S DEPLOY SOME TECH <br />
+            </span>
+            <span>
+              MAGIC TOGETHER!
+              <br />
+            </span>
+          </h1>
+          <div className="flex justify-center pt-10 pb-11">
+            <CustomButton />
+          </div>
         </div>
       </section>
     </main>

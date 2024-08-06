@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* ********************* */
 
 main {
     overflow: auto;
     height: 87vh;
     scroll-snap-type: y mandatory;
-    scroll-behavior: smooth; /* Add this line for smooth scrolling */
   }
   
   section {
@@ -21,4 +21,59 @@ main {
     scroll-snap-align: center;
   }
   
+  /* ****************** slide ************************** */
+  @keyframes marquee-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes marquee-right {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .mask-gradient {
+    mask-image: linear-gradient(to right, transparent 0, black 128px, black calc(100% - 128px), transparent 100%);
+  }
+  
+  .animate-marquee-left {
+    white-space: nowrap;
+    animation: marquee-left 20s linear infinite;
+  }
+  
+  .animate-marquee-right {
+    white-space: nowrap;
+    animation: marquee-right 30s linear infinite;
+  }
+  /* ***************** Scrollbar ****************** */
+
+  ::-webkit-scrollbar {
+    width: .7rem;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background: #7c6969;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #222224;
+  }
+  
+  /* ::-webkit-scrollbar-track {
+    background: #f9f9f9;
+  } */
+  
+  /* ***************** Scrollbar ****************** */
+  
+
   
