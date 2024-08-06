@@ -4,7 +4,7 @@ import CompanyLogo from "../assets/CompanyLogo.svg";
 
 const NavBar = () => {
   return (
-    <nav className="flex fixed w-full bg-black z-10 justify-around items-center py-4 px-0">
+    <nav className="flex fixed w-full bg-black z-20 justify-around items-center py-4 px-0">
       <div className="flex gap-7 text-white font-medium">
         <Link href="/Contact">CONTACT</Link>
         <Link href="/Projects">PROJECTS</Link>
