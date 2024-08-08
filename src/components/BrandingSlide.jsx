@@ -29,16 +29,14 @@ const repeatedLogos = [
 
 const BrandingSlide = ({ animationClass }) => {
   return (
-    <div className="overflow-hidden h-[350px] flex flex-col justify-center w-full top-32">
+    <div className="overflow-hidden h-[350px] flex flex-col justify-center w-full">
       <div
         className="z-10 top-8 relative right-5 w-[120%] bg-white overflow-hidden"
         style={{
           transform: "rotateZ(-14.4deg)",
         }}
       >
-        <div
-          className={`flex gap-7 w-full relative animate-marquee-left`}
-        >
+        <div className={`flex gap-7 w-full relative animate-marquee-left`}>
           {repeatedLogos.map((logo, index) => (
             <Image
               className="w-16 h-14"

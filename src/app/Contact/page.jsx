@@ -17,7 +17,7 @@ const Contact = () => {
 
         <div className="flex w-full justify-center py-12">
           <button
-            className="font-medium text-black w-72 px-7 py-3 bg-[#AB87FF] text-[3.2rem] "
+            className="font-medium text-black px-7 py-2 bg-[#AB87FF] text-[2.5rem]"
             style={{ borderRadius: "60px", lineHeight: 1.2 }}
           >
             COMMIT

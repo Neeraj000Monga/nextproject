@@ -2,12 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* ********************* */
-
 main {
     overflow: auto;
-    height: 87vh;
+    max-height: 87vh;
     scroll-snap-type: y mandatory;
   }
   
@@ -15,12 +13,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 87vh;
-    color: #fff;
-    font-size: 5rem;
+    max-height: 87vh;
     scroll-snap-align: center;
   }
-  
   /* ****************** slide ************************** */
   @keyframes marquee-left {
     0% {
@@ -46,12 +41,12 @@ main {
   
   .animate-marquee-left {
     white-space: nowrap;
-    animation: marquee-left 20s linear infinite;
+    animation: marquee-left 40s linear infinite;
   }
   
   .animate-marquee-right {
     white-space: nowrap;
-    animation: marquee-right 30s linear infinite;
+    animation: marquee-right 45s linear infinite;
   }
   /* ***************** Scrollbar ****************** */
 
@@ -73,7 +68,29 @@ main {
     background: #f9f9f9;
   } */
   
-  /* ***************** Scrollbar ****************** */
-  
 
-  
+/* ************************* BandingCardSlide **************************** */
+
+@media (min-width: 1440px) {
+  html {
+    zoom: .7;
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    zoom: .7;
+  }
+}
+
+@media (min-width: 3860px) {
+  html {
+    zoom: .5;
+  }
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+/* ************************* BandingCardSlide **************************** */

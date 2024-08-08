@@ -52,8 +52,8 @@ export default function Home() {
       </section>
       <section id="section3">
         <div className="flex">
-          <div className=" flex flex-col gap-7 w-full pl-56 pt-7">
-            <h1 className="text-5xl lg:text-6xl font-bold">
+          <div className=" flex flex-col gap-7 w-full pl-56 pt-7 text-white">
+            <h1 className=" text-5xl lg:text-6xl font-bold">
               SOFTWARE DEVELOPMENT
             </h1>
             <h1 className="text-5xl lg:text-6xl font-bold">
@@ -78,7 +78,7 @@ export default function Home() {
       </section>
       <section id="section4">
         <div className="flex">
-          <div className=" flex flex-col gap-7 w-full pl-56">
+          <div className="flex flex-col text-white gap-7 w-full pl-56">
             <h1 className="text-5xl lg:text-6xl font-bold">
               MOBILE APP DEVELOPMENT
             </h1>
@@ -130,8 +130,8 @@ export default function Home() {
         </div>
       </section>
       <section id="section6">
-        <div className="w-full">
-          <div className="flex justify-center pt-14">
+        <div>
+          <div className="flex justify-center pt-10">
             <h1 className="text-white font-extrabold leading-none text-[4rem] text-center">
               <span className="flex" style={{ letterSpacing: "6px" }}>
                 <p
@@ -155,9 +155,13 @@ export default function Home() {
             </h1>
           </div>
           <div>
-            <BrandingSlide />
-            {/* <BandingCardSlide /> */}
+            <BandingCardSlide />
           </div>
+        </div>
+      </section>
+      <section id="section7">
+        <div>
+          <BrandingSlide />
         </div>
       </section>
       <section id="section7">
